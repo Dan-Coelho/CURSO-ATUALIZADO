@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+</head>
+<style>
+    body{
+        background-color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header{
+        background-color: blueviolet;
+        padding: 10px;
+        color: white;
+    }
+    header > h1{
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.644);
+    }
+    nav{
+        /*box-shadow: deslocamento horizotal vertical espalhamento e cor*/
+        background-color: rgb(196, 175, 216);
+        padding: 3px;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.644);
+    }
+    main{
+        background-color: rgba(235, 225, 225, 0.856);
+        font-weight: lighter;
+        padding: 5px;
+        border-radius: 15px 0px;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.644);
+    }
+    aside{
+        background-color: blanchedalmond;
+    }
+    footer{
+        background-color: blueviolet;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 0.5em;
+    }
+</style>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <ul>
+                <li><a href=""></a>Home</li>
+                <li><a href=""></a>Bíblia</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias da cristandade</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ducimus facere nam nostrum impedit doloribus. Odit porro, similique rerum incidunt voluptatibus perferendis voluptas? Ut libero exercitationem eaque mollitia? Repudiandae, velit.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Em cooperação com Sociedade bíblica do Brasil</h3>
+    </footer>
+</body>
+</html>
