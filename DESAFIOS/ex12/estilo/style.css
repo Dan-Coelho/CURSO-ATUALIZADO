@@ -9,37 +9,30 @@
     --fonte1: Verdana, sans-serif;
     --fonte2: 'Suez One', serif;
     --fonte3: 'Cairo', sans-serif;
-
-    --cor1: black;
-    --cor2: white;
-    --cor3: lightgray;
 }
-body{
-    height: 100vh;
-    background-color: var(--cor1);
+html, body{
+    min-height: 100vh;
+    background-color: lightgray;
 }
 header{
-    background-color: var(--cor1);
+    background-color: black;
     height: 200px;
-    border: 1px solid black;
-    padding-top: 50px;
-    margin: auto;
 }
 header > h1{
-    display: block;
+    color: white;
     text-align: center;
-    font: normal bold 4em var(--fonte2);
-    color: var(--cor2);
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 header > h2{
-    display: block;
+    color: white;
     text-align: center;
-    font: normal normal 1.2em var(--fonte2);
-    color: var(--cor2);
+    padding-bottom: 50px;
 }
 header a{
     text-decoration: none;
-    color: var(--cor2);
+    color: white;
+    font-weight: bold;
 }
 header a:hover{
     text-decoration: underline;
@@ -53,19 +46,38 @@ section{
     font-size: 3.5vw;
 }
 section.normal{
-    background-color: var(--cor2);
-    color: var(--cor1);
+    background-color: white;
+    color: black;
 }
 section.imagem{
     background-color: rgba(0, 0, 0, 0.164);
-    color: var(--cor2);
+    color: white;
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.308);
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.411);
 }
 section#img1{
     background:  url('../imagens/background001.jpg') left center no-repeat fixed;
 }
 section#img2{
     background:  url('../imagens/background002.jpg') left center no-repeat fixed;
+}
+footer{
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte1);
+    color: white;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+}
+footer > a:hover{
+    text-decoration: underline;
 }
