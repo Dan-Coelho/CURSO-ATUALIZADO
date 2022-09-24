@@ -7,24 +7,25 @@
     margin: 0px;
     padding: 0px;
 }
-:root{
-    
+:root{ 
     --fonte2: 'Suez One', serif;
     --fonte3: 'Cairo', sans-serif;
 }
 html, body{
     min-height: 100vh;
     background-color: lightgray;
+    margin: 0px;
 }
 header{
     background-color: black;
-    height: 200px;
+    height: 300px;
+    padding-top: 50px;
 }
 header > h1{
     font-family: var(--fonte2);
     color: white;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     font-variant: small-caps;
     font-size: 5vw;
 }
@@ -87,10 +88,10 @@ footer{
     color: white;
     font-size: 1em;
 }
-footer > a{
+footer > p > a{
     text-decoration: none;
     color: white;
 }
-footer > a:hover{
+footer > p > a:hover{
     text-decoration: underline;
 }
