@@ -58,20 +58,25 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.164);
     color: white;
-    background-size: cover;
     background-attachment: fixed;
-    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.308);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.308);
+}
+section > p{
+    padding-bottom: 2em;
 }
 section.imagem > p{
     display: inline-block;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.411);
+    background-color: rgba(0, 0, 0, 0.534);
+    text-shadow: 1px 1px 1px black;
 }
 section#img1{
-    background:  url('../imagens/background001.jpg') left center no-repeat fixed;
+    background:  url('../imagens/background001.jpg') right center no-repeat fixed;
+    background-size: cover;
 }
 section#img2{
     background:  url('../imagens/background002.jpg') left center no-repeat fixed;
+    background-size: cover;
 }
 footer{
     height: 50px;
