@@ -1,12 +1,14 @@
 @charset "UTF-8";
-@import url ('https://fonts.googleapis.com/css2? família=Cairo:wght@200;300;400;700&família=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&family=Suez+One&family=Tangerine&display=swap');
+
+
 
 .{
     margin: 0px;
     padding: 0px;
 }
 :root{
-    --fonte1: Verdana, sans-serif;
+    
     --fonte2: 'Suez One', serif;
     --fonte3: 'Cairo', sans-serif;
 }
@@ -19,15 +21,19 @@ header{
     height: 200px;
 }
 header > h1{
+    font-family: var(--fonte2);
     color: white;
     text-align: center;
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 5vw;
 }
 header > h2{
+    font-family: var(--fonte3);
     color: white;
     text-align: center;
     padding-bottom: 50px;
+    font-size: 1em;
 }
 header a{
     text-decoration: none;
@@ -42,8 +48,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-family: 'Tangerine', cursive;
+    font-size: 5vw;
 }
 section.normal{
     background-color: white;
@@ -57,7 +63,8 @@ section.imagem{
     box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.308);
 }
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.411);
 }
 section#img1{
@@ -71,8 +78,9 @@ footer{
     background-color: black;
     text-align: center;
     padding: 10px;
-    font-family: var(--fonte1);
+    font-family: var(--fonte3);
     color: white;
+    font-size: 1em;
 }
 footer > a{
     text-decoration: none;
